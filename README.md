@@ -2,9 +2,12 @@
 
 Getting the rc-switch library and peripherals working under RPI-zero.
 
+* https://github.com/sui77/rc-switch.git
+* https://github.com/WiringPi/WiringPi.git 
+
 ## Devices
 
-SuperSwitch KSI-194 / KSI-393
+### SuperSwitch KSI-194 / KSI-393
 
 The sockets contain *SC5272-M4* to be paired with *SC5262-M4* encoder.
 Although that should be signal-compatible with *SC2262* encoder, allowing the KSI-393

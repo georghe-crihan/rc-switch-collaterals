@@ -1,0 +1,8 @@
+[submodule "rc-switch"]
+	path = rc-switch
+	url = https://github.com/sui77/rc-switch.git
+	hexsha = 436a74b03f3dc17a29ee327af29d5a05d77f94b9
+[submodule "WiringPi"]
+	path = WiringPi
+	url = https://github.com/WiringPi/WiringPi.git
+	hexsha = b2af17eea92238fa99dae5bf174b3cdf81b78656
