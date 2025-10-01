@@ -8,5 +8,5 @@
 	hexsha = b2af17eea92238fa99dae5bf174b3cdf81b78656
 [submodule "SimpleRcScanner"]
 	path = SimpleRcScanner
-	url = https://github.com/sui77/SimpleRcScanner.git
+	url = https://github.com/sui77/SimpleRcScanner
 	hexsha = c624c448f1f3e0e5d133412d3eebaba51167f13e
