@@ -188,9 +188,9 @@ The transmitter would require higher power for better range and throughput, and 
 be OK if connected to +5V. That is, the Data pin could be driven by RPI's 3.3v 
 without any additional level shifters, as it drives the base of the transistor.
 
-#### The MX-RM-5V reciever
+#### The MX-RM-5V receiver
 
-The reciever should not require more than 3.3v of power, otherwise a simple voltage
+The receiver should not require more than 3.3v of power, otherwise a simple voltage
 divider should solve the problem.
 
 ![Simple voltage divider](Voltage-divider-1.png)
@@ -202,7 +202,7 @@ However it should, in theory, be possible to power it off the 5v rail, as the
 device does already contain a voltage divider (in the form of a 2.2M resistor,
 acting as R1 on the schematic above).
 
-#### Reciever noise
+#### Receiver noise
 
 If powered from the RPI header, there seems to be much noise. This could be fixed
 by powering it off an external PSU.
