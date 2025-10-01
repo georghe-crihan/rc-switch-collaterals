@@ -188,12 +188,35 @@ The transmitter would require higher power for better range and throughput, and 
 be OK if connected to +5V. That is, the Data pin could be driven by RPI's 3.3v 
 without any additional level shifters, as it drives the base of the transistor.
 
+> The TXD pin is the input to the base of an NPN transistor, so all that's
+> necessary is enough voltage to turn on the transistor. Your 3.3v output
+> from the RPi should work fine.
+
 #### The MX-RM-5V receiver
 
 The receiver should not require more than 3.3v of power, otherwise a simple voltage
 divider should solve the problem.
 
-![Simple voltage divider](Voltage-divider-1.png)
+Other sources suggest it will only work on 5v power.
+
+> The output circuit makes use of a duel opamp (LM 358) but my understanding is too
+> flakey to derive the output voltage from this arrangement.
+
+[LM358 datasheet](datasheet/lm358-n.pdf) page 10:-
+
+![LM358 Output Characteristics](LM358-Output-Char.png)
+
+This tells you that maximum output voltage is Vcc - ~1.2 V = ~3.8V with 5 V supply.
+The ESP8266's rated maximum I/O input voltage is 3.6 V, however it probably has
+protection diodes that don't start conducting until pin voltage goes ~0.6 V above
+the power supply voltage, ie. 3.3 + 0.6 = 3.9 V.
+
+So people who are using this combination without level shifting are just getting
+away with it if the power supply voltages are accurate. To be safe you should lower
+the output voltage by at least 0.5 V using eg. a voltage divider made from two
+resistors.
+
+![Simple voltage divider](schematic/Voltage-divider-1.png)
 
 Basic calculation suggests a 2:1 ratio, that is a 4.7K/10K or a 10K/20K resistor
 pair.
