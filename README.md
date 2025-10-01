@@ -204,7 +204,7 @@ Other sources suggest it will only work on 5v power.
 
 [LM358 datasheet](datasheet/lm358-n.pdf) page 10:-
 
-![LM358 Output Characteristics](LM358-Output-Char.png)
+![LM358 Output Characteristics](pics/LM358-Output-Char.png)
 
 This tells you that maximum output voltage is Vcc - ~1.2 V = ~3.8V with 5 V supply.
 The ESP8266's rated maximum I/O input voltage is 3.6 V, however it probably has
