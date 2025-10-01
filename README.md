@@ -125,6 +125,30 @@ Receiver or by using HT12E Encoder and HT12D Decoder IC we can interface these
 modules with Arduino, Raspberry PI or any other micro controllers.
 
 ---
+### Antenna considerations
+
+I tried 17cm wires straight and coiled (see image) when receiving / transmitting
+
+![Straight antenna](pics/straight-antenna.jpg) 
+
+I got much better results using a 19.5 cm connector wire (when receiving)
+
+![Better straight antenna](pics/better-straight-antenna.jpg) 
+
+Need a better antenna.
+
+A balanced dipole antenna works extremely well with those modules, shown in the
+photo below. The connection labelled GND is actually the other antenna connection!
+
+The antenna wires are each 17 cm long for 433 MHz. I get over 300 meters range,
+line of sight with the setup shown.
+
+433 MHz is roughly 70cm wave length... so a half wave dipole is about 33cm .... cut
+in half one side to the antenna connector the other side to ground.
+
+![Dipole](pics/Dipole.gif)
+
+![Second Dipole](pics/BetterAntenna.jpg)
 
 ### Issues
 They can't work without a vital component in place. That inductor
