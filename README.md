@@ -61,7 +61,8 @@ Transistor Q1 S8050 acts as modulator switch and modulates Digital input data
 with Carrier signal and converts it into ASK Wave.(SWG18) 8 Turns and 3 Turns
 coils produce electromagnetic wave that can be propagated using Antenna. The
 schematic above is given for reference and does not exactly replicate the actual
-Module. Here the module picture uses 433.92MHz Saw Resonator with to-39 Case.
+Module. Here the module picture uses 433.92MHz SAW (Surface Acoustic Wave)
+Resonator in TO-39 package.
 
 The 433MHz Receiver Module contains the following circuits:
 
@@ -86,7 +87,7 @@ follow the table for pin details.
 |1	|DATA	|Data Input pin (Data to be Transmitted)
 |2	|VCC	|+Ve Power supply to the Transmitter circuit
 |3	|GND	|Gnd Supply to the Transmitter circuit
-|4 (PCB Via) |ANT 	|Antenna pin and to be connected with Wire antenna
+|4 (PCB Via) |ANT 	|Antenna pin to be connected with Wire antenna
 
 
 #### 433MHZ RF RX
@@ -97,7 +98,7 @@ follow the table for pin details.
 |2	|DATA	|Data Output Pin (Data Receiving Pin)
 |3	|DATA	|Data Output Pin (Data Receiving Pin)
 |4	|GND	|Gnd Supply to the Receiver Circuit
-|5 (PCB Via)	|ANT	|Antenna pin and to be connected with Wire antenna
+|5 (PCB Via)	|ANT	|Antenna pin to be connected with Wire antenna
 
 #### Specifications
 
