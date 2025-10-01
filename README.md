@@ -127,6 +127,16 @@ modules with Arduino, Raspberry PI or any other micro controllers.
 ---
 ### Antenna considerations
 
+Basic physics gives Thomson LC equation (formula for resonant frequency):
+
+![Thomson equation](pics/ThomsonEq.png)
+
+When using an external antenna a 1/4 wavelength is recommended. Ideally 
+use 50 impedance ohm single-core wire, the length of the antenna 433M is 
+about 17cm (1/4 wavelength). When locating the receiver antenna keep it 
+as far away as possible from shielded areas, high voltages, and any 
+possible interfering frequencies.
+
 I tried 17cm wires straight and coiled (see image) when receiving / transmitting
 
 ![Straight antenna](pics/straight-antenna.jpg) 
@@ -170,7 +180,34 @@ Here is the schematic from that site.
 * The inductor is non-critical so should be ok. –  *Commented Apr 5, 2022 at 4:00*
 * @dgnuf - You may be interested in the software I use for making inductors. Not affiliated, I just use and enjoy it. It's called Coil64 and you can find it here: coil32.net/download-coil64-for-windows.html – *Commented Apr 5, 2022 at 4:04*
 
-## Devices
+### RPI power considerations
+
+#### The FS0001A transmitter
+
+The transmitter would require higher power for better range and throughput, and should
+be OK if connected to +5V. That is, the Data pin could be driven by RPI's 3.3v 
+without any additional level shifters, as it drives the base of the transistor.
+
+#### The MX-RM-5V reciever
+
+The reciever should not require more than 3.3v of power, otherwise a simple voltage
+divider should solve the problem.
+
+![Simple voltage divider](Voltage-divider-1.png)
+
+Basic calculation suggests a 2:1 ratio, that is a 4.7K/10K or a 10K/20K resistor
+pair.
+
+However it should, in theory, be possible to power it off the 5v rail, as the
+device does already contain a voltage divider (in the form of a 2.2M resistor,
+acting as R1 on the schematic above).
+
+#### Reciever noise
+
+If powered from the RPI header, there seems to be much noise. This could be fixed
+by powering it off an external PSU.
+
+## Devices Driven
 
 ### SuperSwitch KSI-194 / KSI-393
 
