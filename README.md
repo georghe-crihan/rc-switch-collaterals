@@ -81,23 +81,23 @@ follow the table for pin details.
 
 #### 433MHz RF TX
 
-|Pin Number	|Pin Name	|Pin Description|
-+-------+-------+---------------------------------------------+
-|1	|DATA	|Data Input pin (Data to be Transmitted)|
-|2	|VCC	|+Ve Power supply to the Transmitter circuit|
-|3	|GND	|Gnd Supply to the Transmitter circuit|
-|4 (PCB Via) |ANT 	|Antenna pin and to be connected with Wire antenna|
+|Pin Number	|Pin Name	|Pin Description
+|-------|-------|---------------------------------------------
+|1	|DATA	|Data Input pin (Data to be Transmitted)
+|2	|VCC	|+Ve Power supply to the Transmitter circuit
+|3	|GND	|Gnd Supply to the Transmitter circuit
+|4 (PCB Via) |ANT 	|Antenna pin and to be connected with Wire antenna
 
 
 #### 433MHZ RF RX
 
-|Pin Number	|Pin Name	|Pin Description|
-+---------------+---------------+------------------------+
-|1	|VCC	|+Ve Power supply to the Receiver circuit|
-|2	|DATA	|Data Output Pin (Data Receiving Pin)|
-|3	|DATA	|Data Output Pin (Data Receiving Pin)|
-|4	|GND	|Gnd Supply to the Receiver Circuit|
-|5 (PCB Via)	|ANT	|Antenna pin and to be connected with Wire antenna|
+|Pin Number	|Pin Name	|Pin Description
+|---------------|---------------|------------------------
+|1	|VCC	|+Ve Power supply to the Receiver circuit
+|2	|DATA	|Data Output Pin (Data Receiving Pin)
+|3	|DATA	|Data Output Pin (Data Receiving Pin)
+|4	|GND	|Gnd Supply to the Receiver Circuit
+|5 (PCB Via)	|ANT	|Antenna pin and to be connected with Wire antenna
 
 #### Specifications
 
