@@ -67,9 +67,9 @@ Resonator in TO-39 package.
 The 433MHz Receiver Module contains the following circuits:
 
 1.Rectifier,
-2.Envelope Detector,
-3.Comparator and
-4.Output Buffer.
+1.Envelope Detector,
+1.Comparator and
+1.Output Buffer.
 
 After Receiving the ASK RF signal, it is amplified by the transistor T1 and
 Rectified by using two 1N4148 Diodes. Then the Comparator LM358 Compares and
