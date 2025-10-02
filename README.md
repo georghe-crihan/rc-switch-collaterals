@@ -119,7 +119,7 @@ follow the table for pin details.
 
 #### Specifications
 
-##### For Receiver Module
+##### For Transmitter Module
 
 * It can operate with 3V to 9V input DC Voltage.
 * Operating Frequency is 433.92MHz (433MHz)
