@@ -252,14 +252,14 @@ Other sources suggest it will only work on 5v power.
 
 ![LM358 Output Characteristics](pics/LM358-Output-Char.png)
 
-This tells you that maximum output voltage is Vcc - ~1.2 V = ~3.8V with 5 V supply.
-The ESP8266's rated maximum I/O input voltage is 3.6 V, however it probably has
-protection diodes that don't start conducting until pin voltage goes ~0.6 V above
-the power supply voltage, ie. 3.3 + 0.6 = 3.9 V.
+This tells you that maximum output voltage is Vcc - ~1.2v = ~3.8v with 5v supply.
+The ESP8266's rated maximum I/O input voltage is 3.6v, however it probably has
+protection diodes that don't start conducting until pin voltage goes ~0.6v above
+the power supply voltage, ie. 3.3 + 0.6 = 3.9v.
 
 So people who are using this combination without level shifting are just getting
 away with it if the power supply voltages are accurate. To be safe you should lower
-the output voltage by at least 0.5 V using eg. a voltage divider made from two
+the output voltage by at least 0.5v using e.g. a voltage divider made from two
 resistors.
 
 ![Simple voltage divider](schematic/Voltage-divider-1.png)
