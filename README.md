@@ -1,5 +1,8 @@
 # rc-switch-collaterals
 
+That also means, however, that, for example, audio transmission (albeit low quality)
+should be possible (out of scope of this article).
+
 Getting the rc-switch library and peripherals working under RPI-zero.
 
 * https://github.com/sui77/rc-switch.git
@@ -9,6 +12,20 @@ If you want to visualize a telegram copy the raw data and
 paste it into http://test.sui.li/oszi/
 
 ## RC-Switch hardware
+
+### General notes
+
+The receiver part is essentially an audio gain circuit.
+
+The transmitter part is a generic sender.
+
+That is, they are ANALOG circuits, so DO NOT contain any digital parts.
+That means they would probably work with Arduino (a microcontroller) but the RPI
+needs to be almost real time to accurately poll or send the data packets when
+driving common devices (like SC52XX-based).
+
+That also means, however, that, for example, audio transmission (albeit low quality)
+should be possible (out of scope of this article).
 
 ---
 
@@ -161,6 +178,9 @@ in half one side to the antenna connector the other side to ground.
 ![Second Dipole](pics/BetterAntenna.jpg)
 
 ### Issues
+
+#### Transmitter inductor missing
+
 They can't work without a vital component in place. That inductor
 provides power to the high-frequency oscillator.
 
@@ -179,6 +199,11 @@ Here is the schematic from that site.
 * The linked page shows how to solve the problem, but using enamel insulated copper wire to wind the coil. I don't have any of that, but I do have some plastic insulated wire that should work. Assuming I make it the same size: 4mm diameter by 3 turns, and just strip the insulation off the ends to solder it, should that work OK? –  *Commented Apr 5, 2022 at 2:45*
 * The inductor is non-critical so should be ok. –  *Commented Apr 5, 2022 at 4:00*
 * @dgnuf - You may be interested in the software I use for making inductors. Not affiliated, I just use and enjoy it. It's called Coil64 and you can find it here: coil32.net/download-coil64-for-windows.html – *Commented Apr 5, 2022 at 4:04*
+
+
+#### Transmitter silk screen for the pins is wrong
+
+The *VCC* and the *DATA* pins are reversed.
 
 ### RPI power considerations
 
