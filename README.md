@@ -17,7 +17,8 @@ paste it into http://test.sui.li/oszi/
 
 The receiver part is essentially an audio gain circuit.
 
-The transmitter part is a generic sender.
+The transmitter part is a generic sender. Apparently, a clone of the
+[315M/433M](datasheet/datasheet_76.pdf) super-regenerative receiver.
 
 That is, they are ANALOG circuits, so DO NOT contain any digital parts.
 That means they would probably work with Arduino (a microcontroller) but the RPI
