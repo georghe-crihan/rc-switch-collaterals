@@ -212,6 +212,12 @@ However
 
 The *VCC* and the *DATA* pins are reversed.
 
+On some versions of the FS1000A 433MHz RF transmitter module, the pins are
+mislabeled due to a reversed printing process. The label for the *Data* pin,
+printed as "*ATAD*" (*DATA* backwards), is incorrect. The correct pinout for
+the FS1000A is easily identified by its position relative to the VCC and
+Ground pins.
+
 > Connecting the circuit the right way around, the microcontroller/datasource
 > output needs to be connected to the pin that has a single PCB trace going into
 > a single SMD resistor - nowhere else - and the data source ground to module
