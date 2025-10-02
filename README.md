@@ -236,6 +236,8 @@ without any additional level shifters, as it drives the base of the transistor.
 > necessary is enough voltage to turn on the transistor. Your 3.3v output
 > from the RPi should work fine.
 
+That is also reported to work in 12v/5v configurations.
+
 #### The MX-RM-5V receiver
 
 The receiver should not require more than 3.3v of power, otherwise a simple voltage
