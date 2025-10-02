@@ -200,10 +200,29 @@ Here is the schematic from that site.
 * The inductor is non-critical so should be ok. –  *Commented Apr 5, 2022 at 4:00*
 * @dgnuf - You may be interested in the software I use for making inductors. Not affiliated, I just use and enjoy it. It's called Coil64 and you can find it here: coil32.net/download-coil64-for-windows.html – *Commented Apr 5, 2022 at 4:04*
 
+However
+
+> At first glance it may look like the (again, on the modules I have) the shorter
+> 3 turn coil is missing (compared to some images I've seen on the internet) but I
+> had an SMD version of the coil on the solder side of the PCB. The 'Ant' label shows
+> the hole where the collector-side of the non-SMD version of the coil can be
+> inserted.
 
 #### Transmitter silk screen for the pins is wrong
 
 The *VCC* and the *DATA* pins are reversed.
+
+> Connecting the circuit the right way around, the microcontroller/datasource
+> output needs to be connected to the pin that has a single PCB trace going into
+> a single SMD resistor - nowhere else - and the data source ground to module
+> ground. Then the +12V supply to pin where the PCB trace is going e.g. to 8 turn
+> coil and the supply ground also to module ground. That way you should be getting
+> more power. (Twice the voltage raises the power by 4 times if all the other
+> parameters will stay the same - which they will not.)
+
+> I don't have one of my modules right now, but if my memory serves me right, the
+> middle pin was the correct pin for the Vcc. Gnd was labeled correctly which
+> leaves the remaining pin for the data.
 
 ### RPI power considerations
 
