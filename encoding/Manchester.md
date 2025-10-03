@@ -39,10 +39,11 @@ certain receivers. (There is quite a variation of characteristics of
 available 433MHz receiver modules).
 
 ![Pulses](pics/1.png)
+![More pulses](pics/2.png)
 
 Here is a scope shot of the start of a typical transmission sequence:
 
-![Scope shot](pics/2.png)
+![Scope shot](pics/3.png)
 
 The receiver state machine that decodes the modulation stream has a number of
 states that deal with detecting sync high (3T), sync low (3T), Fake 0 Filler,
@@ -51,7 +52,8 @@ upon a sequence of four possible current state cases and next state
 possibilities. (Note that as each bit is logged there is a total bit counter
 that keeps track of when the end of the message is detected).
 
-![State cases](pics/3.png)
+![State cases](pics/4.png)
+![More state cases](pics/5.png)
 
 As I described before, the receive decoder measures the width of each received
 pulse width and determines its nominal 1T or 2T width by comparing the measured
@@ -64,14 +66,14 @@ pulse widths in a particular state looks like below. The state machine is called
 from the interrupt context that occurs at each falling and rising edge of the
 input waveform.
 
-![Pulse width check](pics/4.png)
+![Pulse width check](pics/6.png)
 
 I've used a spreadsheet to compute the pulse range values and exported that as
 a set of defines that equate the widths based upon counts in the MCU timer used
 to measure the widths. Here is a sample of the calculations for one target
 receiver I produced.
 
-![Spreadsheet calculations](pics/5.png)
+![Spreadsheet calculations](pics/7.png)
 
 RF transmissions using 433MHz are typically line of site for detection by the
 receiver. In one of my applications where the path between the transmitting MCU
@@ -85,12 +87,14 @@ the Manchester decode and encode state machines. The following snippet shows
 how close the Verilog state machine code looks as compared to the same decoder
 state shown above in C code.
 
-![Verilog code snippet](pics/6.png)
+![Verilog code snippet](pics/8.png)
 
 In the case of the Verilog sample the measured pulse width was performed in
 another module and the comparision results sent as signals to the state
 machine decoder module.
 
 *edited Jun 2, 2015 at 12:27*
+
 *answered May 31, 2015 at 6:49*
+
 *Michael Karas*
