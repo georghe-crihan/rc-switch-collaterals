@@ -209,7 +209,7 @@ However
 > the hole where the collector-side of the non-SMD version of the coil can be
 > inserted.
 
-#### Transmitter silk screen for the pins is wrong
+#### Transmitter: silk screen for the pins is wrong
 
 The *VCC* and the *DATA* pins are reversed.
 
@@ -231,6 +231,34 @@ Ground pins.
 > middle pin was the correct pin for the Vcc. Gnd was labeled correctly which
 > leaves the remaining pin for the data.
 
+Apparently, in my batch the pinout goes as GND 5V DATA, that is corresponds to
+the silkscreen.
+
+#### Transmitter: the quartz/xtal shorts to the body
+
+[https://www.youtube.com/watch?v=w_NLh25YWJA](Tim's 433Mhz FS1000A Repair. [Wireless TX and RX Module])
+
+That is, due to bad soldering (the solder drops short the pins to the body) and/or
+no standoff from the board (whereas the solder flows through the holes, shorting the
+pins to the body) the module becomes shorted and thus totally useless.
+
+![pics/Q-Flat.png](The XTal goes flat to the board]
+
+![pics/Q-Short.png](Shorted board)
+
+![pics/Q-Solder.png](Solder flows through to short the pins on the body)
+
+The suggested fix is to re-solder the quartz/xtal, using a 3D-printed standoff.
+
+![pics/Q-Standoff.png](Suggested fix)
+
+Yet, a simpler solution is to temporarily engage some standoff (e.g. a pair of
+tooth pokes) when soldering, removing them afterwards.
+
+Apparently, in my batch there is no such a problem and the resistance between the
+DATA and the GND pins is a couple of MegaOhms.
+
+ 
 ### RPI power considerations
 
 #### The FS0001A transmitter
