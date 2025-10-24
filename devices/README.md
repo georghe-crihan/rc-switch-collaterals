@@ -10,13 +10,13 @@ Thomas & Betts Corporation WIRELESS OUTDOOR LIGHT CONTROL TRANSMITTER HW2190T
 
 Xodus Innovations LLC
 
-Wireless Plugin Switch HW2170R
-Wireless Light Socket Switch
-Wireless Switched Outlet HW2175
-Wireless Pull Chain Socket Switch HW2165
+- Wireless Plugin Switch HW2170R
+- Wireless Light Socket Switch
+- Wireless Switched Outlet HW2175
+- Wireless Pull Chain Socket Switch HW2165
 
-NA2RRXV213X -> 2AESZ‐HW2170R
-DE4‐HW2181T -> 2AESZ‐HW2181T
+- NA2RRXV213X -> 2AESZ‐HW2170R
+- DE4‐HW2181T -> 2AESZ‐HW2181T
 
 
 Has a range of switches / remotely controlled fixtures / wall plugs that can be
