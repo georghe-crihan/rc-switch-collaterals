@@ -313,7 +313,9 @@ by powering it off an external PSU.
 
 ## Devices Driven
 
-For more see [here](devices/README.md).
+For more RF devices, see [here](devices/).
+
+For more IR devices, see [here](IR/).
 
 ### SuperSwitch KSI-194 / KSI-393
 
