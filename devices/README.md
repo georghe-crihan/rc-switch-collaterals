@@ -34,4 +34,13 @@ standard encoder/decoder chips, but Microchip's MCUs in both, reciever and
 transmitter. The transmitter often contains just Chip-On-Board (COB, package-less IC,
 covered by a plastic or epoxy blob).
 
+## Westinghouse TK206
 
+FCC ID: 2AHNS-TK206
+
+Has an [unknown] encoder DIP IC marked as 
+
+```
+PR3T21116N
+B7035-1
+```
