@@ -44,3 +44,6 @@ Has an [unknown] encoder DIP IC marked as
 PR3T21116N
 B7035-1
 ```
+
+The sockets contain a SYNOXO 480R (8-pin version) reciever along with some defaced
+decoder IC (also 8-pin).
