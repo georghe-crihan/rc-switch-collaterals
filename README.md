@@ -180,6 +180,13 @@ in half one side to the antenna connector the other side to ground.
 
 ### Issues
 
+#### Reciever inductor missing
+
+The through-hole component is reported to be replaced by a SMD part.
+
+The original implementation contained a 10 mH +/- 10% inductor (color coded as
+Brown, Black, Orange, Silver).
+
 #### Transmitter inductor missing
 
 They can't work without a vital component in place. That inductor
