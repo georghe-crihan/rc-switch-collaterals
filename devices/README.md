@@ -38,12 +38,22 @@ covered by a plastic or epoxy blob).
 
 FCC ID: 2AHNS-TK206
 
-Has an [unknown] encoder DIP IC marked as 
+(Also dubbed as Stanley in the manual, provided to FCC).
+
+Has an [unknown] tansmitter/encoder DIP IC marked as 
 
 ```
 PR3T21116N
 B7035-1
 ```
 
+Other batch contains the ```TE90TP16N``` DIP package, that seems to be analogous to the
+above transmitter/encoder IC.
+
 The sockets contain a SYNOXO 480R (8-pin version) reciever along with some defaced
 decoder IC (also 8-pin).
+
+The sockets have the ability to be paired with the transmitter - long-pressing the power button for
+three seconds puts the socket into the learning mode, whereas pressing the on button (for two seconds)
+on the transmitter and then off in turn completes the sequence. I suspect one could thus inverse the
+function of the transmitter buttons though. :)`
