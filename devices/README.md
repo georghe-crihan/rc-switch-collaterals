@@ -56,4 +56,10 @@ decoder IC (also 8-pin).
 The sockets have the ability to be paired with the transmitter - long-pressing the power button for
 three seconds puts the socket into the learning mode, whereas pressing the on button (for two seconds)
 on the transmitter and then off in turn completes the sequence. I suspect one could thus inverse the
-function of the transmitter buttons though. :)`
+function of the transmitter buttons though. :)
+
+Sniffing the data:
+```
+22591314 unit 14 on, period: 258us.
+```
+It's the ```KlikAanKlikUit``` protocol used by several different companies.
